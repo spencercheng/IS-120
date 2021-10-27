@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Information about Biriyani">
   <title>IS 120 Website</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+  <l ink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,17 +18,108 @@
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a>Home</a></li>
-        <li><a href="about/">About</a></li>
-        <li><a href="form/">Form</a></li>
-      </ul>
-    </nav>
+    <picture>
+      <source srcset="Images/Taj-Mahal-1600px.jpg" media="(min-width: 901px)">
+      <source srcset="Images/Taj-Mahal-900px.jpg" media="(min-width: 481px)">
+      <source srcset="Images/Taj-Mahal-600px.jpg" media="(min-width: 480px)">
+      <img src="Images/Taj-Mahal-900px.jpg" alt="Image of Taj Mahal">
+    </picture>
+
+    <div class="text-overlay">
+      <h1> Welcome to India!</h1>
+      <p>By: Spencer Cheng</p>
+    </div>
   </header>
+  <nav>
+    <ul>
+      <li><a>Home</a></li>
+      <li><a href="about/">About</a></li>
+      <li><a href="form/">Form</a></li>
+    </ul>
+  </nav>
+  <main>
+    <article class="panel">
+      <div class="text-wrapper">
+        <h2>Why India?</h2>
+        <p>
+          India Is freaking awesome. It has amazing food and culture that are vastly underestimated, and historic sites
+          that
+          are millions of years old. This is why India is one of the most populated place on Earth, because it is a
+          popular
+          place! Haha.
+        </p>
+        <a class="button" href=""> Learn More!</a>
+      </div>
+      <div class="image-wrapper">
+        <img src="Images/Biranyi-Float.jpg" alt="Image of tasty Biryani">
+      </div>
+    </article>
+
+    <aside class="full-width">
+      <p> Wow this worked!</p>
+    </aside>
+
+
+    <article class="panel">
+      <div class="recipe">
+        <h2>
+          Recipe for Chicken Biryani
+        </h2>
+        <p>
+          The recipes to make Chicken Biryani are pretty simple. If you want the American-Style Chicken Biryani, then
+          here
+          it is.
+        </p>
+        <a class="button" href="">Buy Now!</a>
+      </div>
+      <div class="left-wrapper">
+        <img src="Images/Curry-Float.jpg" alt="Image of Curry">
+      </div>
+    </article>
 
 
 
+    <div class="steps">
+      <h3>
+        Steps
+      </h3>
+      <ol>
+        <li>
+          Mince onions
+        </li>
+      </ol>
+    </div>
+  </main>
 
-
+  <div class="cards">
+    <div class="card">
+      <a>
+        <div class="image-wrapper"><img src="Images/Card1.jpg" alt="Cool Place">
+        </div>
+        <p><span>Come Visit!</span></p>
+      </a>
+    </div>
+    <div class="card">
+      <a>
+        <div class="image-wrapper"><img src="Images/Card2.jpg" alt="Another Cool Place">
+        </div>
+        <p><span>COme visit!</span></p>
+      </a>
+    </div>
+    <div class="card">
+      <a>
+        <div class="image-wrapper"><img src="Images/Card3.jpg" alt="Oh Another cool place">
+        </div>
+        <p><span>Come Visit!</span></p>
+      </a>
+    </div>
+    <div class="card">
+      <a>
+        <div class="image-wrapper"><img src="Images/Card4.jpg" alt="Super cool place">
+        </div>
+        <p><span>COme visit!</span></p>
+      </a>
+    </div>
+  </div>
+  <footer> COol footer</footer>
 </body>
