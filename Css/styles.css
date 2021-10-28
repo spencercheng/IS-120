@@ -36,7 +36,7 @@ header {
 }
 header .text-overlay {
   position: absolute;
-  left: 500px;
+  left: 0;
   right: 0;
   top: 0;
   bottom: 0;
@@ -78,11 +78,14 @@ nav li a[href]:hover {
 /**** Panel ****/
 .panel {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .panel .image-wrapper {
   order: -1;
-  margin-bottom: 2rem;
+  flex: 0 1 40%;
+}
+.panel .recipe {
+  flex: 1 0 60%;
 }
 .panel h2 {
   margin-top: 0;
