@@ -64,8 +64,8 @@ nav ul {
 }
 nav li a {
   display: block;
-  color: var(--text-color);
-  font-size: 1.5rem;
+  color: Black;
+  font-size: 25px;
   margin: 1rem;
   padding: 1rem 1.8rem;
   text-decoration: none;
@@ -73,7 +73,7 @@ nav li a {
   justify-content: space-around;
 }
 nav li a[href]:hover {
-  border-bottom: 3px solid var(--second-highlight-color);
+  border-bottom: 3px solid red;
 }
 /**** Panel ****/
 .panel {
@@ -163,20 +163,17 @@ aside {
   padding: 1rem;
   border-radius: 4px;
   user-select: none;
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.12);
   transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), background 800ms;
 }
 .button:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.12);
 }
 .button:active {
-  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
-    0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
-  background-color: var(--contrast-color-light-darker);
+  box-shadow: rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.12);
+  background-color: white;
   background-size: 100%;
-  transition: background 0s;
+  transition: background 0.1s;
 }
 /**** media queries ****/
 
