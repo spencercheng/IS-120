@@ -6,6 +6,11 @@
 *: ::after {
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
 h1 {
   color: White;
   font-size: 4em;
@@ -46,7 +51,10 @@ header .text-overlay {
   justify-content: center;
 }
 .text-overlay h1 {
-  margin: 0;
+  margin: 10px;
+}
+.text-overlay p {
+  margin: 15px;
 }
 picture img {
   width: 100%;
@@ -81,7 +89,7 @@ nav li a[href]:hover {
   flex-direction: column;
 }
 .panel .image-wrapper {
-  order: -1;
+  order: -2;
   flex: 0 1 40%;
 }
 .panel .recipe {
