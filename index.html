@@ -16,6 +16,13 @@
     rel="stylesheet">
   <link rel="stylesheet" href="Css/styles.css">
 </head>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelector(".menu-icon").addEventListener("click", () => {
+      document.querySelector(".main-menu").classList.toggle("menu-show");
+    });
+  });
+</script>
 
 <body>
   <header>
@@ -31,13 +38,17 @@
       <p>By: Spencer Cheng</p>
     </div>
   </header>
-  <nav>
-    <ul>
-      <li><a>Home</a></li>
-      <li><a href="about/">About</a></li>
-      <li><a href="form/">Form</a></li>
-    </ul>
-  </nav>
+  <div class="main-menu">
+    <div class="menu-icon">X</div>
+    <nav>
+      <ul>
+        <li><a>Home</a></li>
+        <li><a href="about/">About</a></li>
+        <li><a href="form/">Form</a></li>
+      </ul>
+    </nav>
+  </div>
+  </div>
   <main>
     <article class="panel">
       <div class="text-wrapper">

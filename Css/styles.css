@@ -63,18 +63,43 @@ picture img {
 }
 
 /**** Nav ****/
+.menu-icon {
+  z-index: 2;
+  color: white;
+  font-size: 3rem;
+  position: fixed;
+  margin-bottom: 4rem;
+}
+.main-menu {
+  position: relative;
+  order: -1;
+}
+.main-menu.menu-show nav {
+  transform: translateX(0);
+}
+nav {
+  background-color: orange;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  transform: translateX(-500px);
+  transition: transform 400ms ease;
+}
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  flex-direction: column;
   display: flex;
   justify-content: center;
 }
 nav li a {
   display: block;
-  color: Black;
+  color: white;
   font-size: 25px;
-  margin: 1rem;
+  margin: 2rem;
   padding: 1rem 1.8rem;
   text-decoration: none;
   border-bottom: 3px solid;
@@ -86,6 +111,7 @@ nav li a[href]:hover {
   border-bottom: 3px solid red;
   transform: rotate(360deg);
 }
+
 /**** Panel ****/
 .panel {
   display: flex;
@@ -267,6 +293,45 @@ aside {
 
   .card:last-child {
     margin-right: 0;
+  }
+}
+
+@media (min-width: 501px) {
+  .main-menu {
+    order: 0;
+  }
+  .main-menu .menu-icon {
+    display: none;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 80rem;
+  }
+  nav li a {
+    display: block;
+    color: Black;
+    font-size: 25px;
+    margin: 1rem;
+    padding: 1rem 1.8rem;
+    text-decoration: none;
+    border-bottom: 3px solid;
+    justify-content: space-around;
+    transition-duration: 500ms;
+    transition-property: transform, border;
+  }
+  nav li a[href]:hover {
+    border-bottom: 3px solid red;
+    transform: rotate(360deg);
+  }
+  nav {
+    background-color: transparent;
+    position: static;
+    width: auto;
+    height: auto;
   }
 }
 /*** Forms Page ***/
