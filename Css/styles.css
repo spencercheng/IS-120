@@ -69,16 +69,17 @@ picture img {
   font-size: 3rem;
   position: fixed;
   margin-bottom: 4rem;
+  top: 0.5rem;
 }
 .main-menu .menu-icon {
   position: fixed;
-  top: 1.5rem;
-  left: 1.5rem;
+  top: 0.5rem;
+  left: 0.5rem;
   width: 60px;
   height: 60px;
   background-color: blue;
   border-radius: 50%;
-
+  top: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,7 +151,9 @@ nav li a {
   display: block;
   color: white;
   font-size: 25px;
-  margin: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-bottom: 2rem;
   padding: 1rem 1.8rem;
   text-decoration: none;
   border-bottom: 3px solid;
@@ -369,7 +372,9 @@ aside {
     display: block;
     color: Black;
     font-size: 25px;
-    margin: 1rem;
+    margin-left: 30rem;
+    margin-right: 7rem;
+    margin-bottom: 3rem;
     padding: 1rem 1.8rem;
     text-decoration: none;
     border-bottom: 3px solid;
