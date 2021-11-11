@@ -21,7 +21,7 @@ header p {
 main {
   align-self: center;
   max-width: 70rem;
-  margin: 1 1rem;
+  margin: 6rem 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -70,6 +70,57 @@ picture img {
   position: fixed;
   margin-bottom: 4rem;
 }
+.main-menu .menu-icon {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 60px;
+  height: 60px;
+  background-color: blue;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-menu svg {
+  stroke: ivory;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  padding: 12px;
+}
+
+.main-menu svg line {
+  transform-origin: center;
+  transition: transform 200ms ease;
+}
+
+.main-menu svg line:first-child {
+  transform: translateY(8px);
+}
+
+.main-menu svg line:last-child {
+  transform: translateY(-8px);
+}
+
+.menu-show .menu-icon {
+  background-color: white;
+}
+
+.menu-show svg line {
+  stroke: orange;
+  stroke-width: 5px;
+}
+
+.menu-show svg line:first-child {
+  transform: rotate(135deg);
+}
+
+.menu-show svg line:last-child {
+  transform: rotate(-135deg);
+}
+
 .main-menu {
   position: relative;
   order: -1;
@@ -297,6 +348,9 @@ aside {
 }
 
 @media (min-width: 501px) {
+  main{
+    margin: 0 1.5rem'
+  }
   .main-menu {
     order: 0;
   }
