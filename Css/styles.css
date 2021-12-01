@@ -404,7 +404,6 @@ aside {
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 section{
-  max-width: 50rem;
   display: grid;
   justify-content: center;
 }
