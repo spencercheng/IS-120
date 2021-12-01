@@ -12,6 +12,9 @@ body {
   flex-direction: column;
   overflow-x: hidden;
 }
+.About{
+  color: Black;
+}
 h1 {
   color: White;
   font-size: 4em;
