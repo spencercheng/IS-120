@@ -132,14 +132,15 @@
     </div>
   </div>
   <footer> COol footer</footer>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".menu-icon").addEventListener("click", () => {
+        document.querySelector(".main-menu").classList.toggle("menu-show");
+      });
+    });
+  </script>
 </body>
 
-<script>
-  window.addEventListener("DOMContentLoaded", () => {
-    document.querySelector(".menu-icon").addEventListener("click", () => {
-      document.querySelector(".main-menu").classList.toggle("menu-show");
-    });
-  });
-</script>
+
 
 </html>
