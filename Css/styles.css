@@ -402,12 +402,11 @@ aside {
   flex-direction: column;
   margin: 0 1rem;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  align-items: center;
-  justify-content: center;
 }
 section{
   max-width: 50rem;
-  align-self: center;
+  display: grid;
+  justify-content: center;
 }
 input,textarea,fieldset {
   padding: 0;
