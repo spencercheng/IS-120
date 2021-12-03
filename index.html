@@ -12,6 +12,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Spectral:ital,wght@1,300&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="Css/styles.css">
@@ -19,7 +22,22 @@
 
 
 <body>
-  <header>
+  <div id="hero">
+    <div class="texture"> </div>
+    <video loop muted autoplay preload="auto">
+
+
+      <source src="video3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="caption">
+      <h1> Welcome to India!</h1>
+    </div>
+
+  </div>
+
+  <!-- <header>
     <picture>
       <source srcset="Images/Taj-Mahal-1600px.jpg" media="(min-width: 901px)">
       <source srcset="Images/Taj-Mahal-900px.jpg" media="(min-width: 481px)">
@@ -31,7 +49,8 @@
       <h1> Welcome to India!</h1>
       <p>By: Spencer Cheng</p>
     </div>
-  </header>
+  </header> -->
+
   <div class="main-menu">
     <div class="menu-icon"><svg viewbox="0 0 60 60">
         <line x1="5%" y1="50%" x2="95%" y2="50%" />
@@ -132,6 +151,7 @@
     </div>
   </div>
   <footer> COol footer</footer>
+
   <script>
     window.addEventListener("DOMContentLoaded", () => {
       document.querySelector(".menu-icon").addEventListener("click", () => {
@@ -139,6 +159,7 @@
       });
     });
   </script>
+  <script src="js/app.js"></script>
 </body>
 
 
